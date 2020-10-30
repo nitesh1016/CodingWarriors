@@ -1,8 +1,12 @@
+*{
+    color: white;
+}
 body{
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: #fed430;
     color: white;
+    
 }
 li{
     list-style: none;
@@ -12,13 +16,21 @@ nav{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 235px;
-  
+     
 }
 #f-ul{
     display: grid;
     grid-template-columns: repeat(6,1fr);
+    grid-gap: 25px;
+    
 }
 #s-ul{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
+}
+a{
+    text-decoration: none;
+}
+#image{
+    
 }
