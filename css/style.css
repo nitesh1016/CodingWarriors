@@ -598,13 +598,51 @@ Author : The Roushan */
         background-color: #292c44;
     }
 }
+
 .choose-option{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 250px;
-    margin: 5% 0 0 20%;
+    margin: 5% 0 0 0;
+
 
 }
 .options{
-        
+    border-radius: 40px;
+    font-size: xx-large;
+    text-align: center ;
+    
+    
+    
+}
+.options1{
+    background-color: #ff5349;
+    
+
+}
+.options2{
+    background-color: #ff9c97;
+}
+.options3{
+    background-color: aqua;
+    
+}
+.options4{
+    background-color: burlywood;
+    
+}
+a{
+    text-decoration: none;
+}
+footer{
+    margin: 115px 20px 0px 320px;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+   
+    
+}
+.footer{
+    display: block;  
+    background-color: #ff5349; 
 }
