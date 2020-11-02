@@ -452,6 +452,7 @@ Author : The Roushan */
     text-decoration: underline;
 }
 
+
 @media only screen and (min-width: 1368px) {
     .main-container {
         margin: 100px
@@ -596,4 +597,14 @@ Author : The Roushan */
     .footer .links a:hover {
         background-color: #292c44;
     }
+}
+.choose-option{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 250px;
+    margin: 5% 0 0 20%;
+
+}
+.options{
+        
 }
