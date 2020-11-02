@@ -20,13 +20,13 @@
 <i class="fa fa-bars" id="hamburger" onclick="mobileNav();"></i>
 </div>
 <ul id="nav">
-<li class="logo hvr-grow"><a href="index.html">Home</a></li>
-<li class="logo hvr-grow"><a href="practice.html" style="color: red;">Practice</a></li>
-<li class="logo hvr-grow"><a href="dashboard.html">Dashboard</a></li>
-<li class="logo hvr-grow "><a href="code_library.html">Code Library</a></li>
-<li class="logo hvr-grow "><a href="contests.html">Contests</a></li>
-<li class="logo hvr-grow "><a href="contact_us.html">Contact Us</a></li>
-</ul>
+    <li class="logo hvr-grow"><a href="./index.html">Home</a></li>
+    <li class="logo hvr-grow"><a href="../practice/" style="color: red;">Practice</a></li>
+    <li class="logo hvr-grow"><a href="#">Dashboard</a></li>
+    <li class="logo hvr-grow "><a href="#">Contests</a></li>
+    <li class="logo hvr-grow "><a href="../AboutUs/">Code Library</a></li>
+    <li class="logo hvr-grow "><a href="../ContactUs/">Contact Us</a></li>
+    </ul>
 </header>
 
 <section class="main-container">
@@ -191,39 +191,5 @@
 <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
 <script src="javascript/app.js"></script>
 <script src="javascript/function.js"></script>
-<script>
-        firebase.auth().onAuthStateChanged(function(user) {
-            if (user) {
-                // User is signed in.
-                localStorage.setItem("isLogged", "yes"); //saves the login stats for pass-reset access and profile.html
-
-                console.log("User is already logged in.");
-                document.getElementById("sign-in-link").style.cssText = "display: none ";
-                document.getElementById("sign-up-link").style.cssText = "display: none ";
-                document.getElementById("logout-link").style.cssText = "display: flex ";
-                document.getElementById("user-avatar").style.cssText = "display: flex ";
-                document.getElementById("username").innerText = user.displayName;
-                document.getElementById("avatar").src = user.photoURL;
-
-                if (!user.emailVerified) {
-                    sweeetAlertEmailVerification()
-                }
-
-            } else {
-                localStorage.setItem("isLogged", "no"); //saves the login stats for pass-reset access and profile.html
-
-                console.log("User is not logged in.");
-                document.getElementById("sign-in-link").style.cssText = "display: flex ";
-                document.getElementById("sign-up-link").style.cssText = "display: flex ";
-                document.getElementById("logout-link").style.cssText = "display: none ";
-                document.getElementById("user-avatar").style.cssText = "display: none ";
-            }
-        });
-    </script>
-<script>
-        getQuestion();
-    </script>
-
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </body>
 </html>
